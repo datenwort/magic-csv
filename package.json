@@ -27,6 +27,6 @@
   "homepage": "https://github.com/greenseedtech/magic-csv",
   "devDependencies": {
     "async": "~0.9.0",
-    "coffee-script": "~1.8.0"
+    "coffeescript": "^2.3.1"
   }
 }
