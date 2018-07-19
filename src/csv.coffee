@@ -88,9 +88,9 @@ class CSV
 			res.set(headers)
 		@writeToStream(res, callback)
 
-	readFile: (path, callback) ->
+	readFile: (path, config, callback) ->
 		@_raw = ''
-		stream = require('fs').createReadStream(path)
+		stream = require('fs').createReadStream(path, config)
 			.on 'data', (chunk) =>
 				@_raw += chunk
 			.on 'error', (err) =>
